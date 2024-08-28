@@ -1,0 +1,286 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    background-color: #eee;
+    width: 100%;
+    height: 50px;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    /* position: fixed;
+    z-index: 999; */
+    justify-content: space-between;
+    padding: 10px 200px;
+}
+
+header a {
+    text-decoration: none;
+    color: blue;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 1.5em;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.navigation {
+    font-size: 1.1em;
+    color: #3a6cf4;
+
+}
+
+.navigation a {
+    margin-right: 20px;
+}
+
+.navigation a:hover {
+    color: red;
+}
+
+/* Section main */
+
+.main {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background: url(images/img1.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 120px 200px;
+    color: white;
+}
+
+.main h2,
+.main h3 {
+    font-size: 1.5em;
+}
+
+.desc {
+    color: chocolate;
+    font-size: 2em;
+}
+
+.firstBtn {
+    background-color: #3a6cf4;
+    width: 180px;
+    height: 50px;
+    /* border-radius: 9000px; to make circled  */
+    border-radius: 15px;
+    border: none;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    font-size: 1em;
+    font-weight: 600;
+    color: white;
+    /* to give it chace to transform in 0.7s  */
+    transition: 0.7s ease;
+}
+
+.firstBtn:hover {
+    background-color: blue;
+    /* to make size bigger */
+    transform: scale(1.1);
+}
+
+.specialIcons a {
+    text-decoration: none;
+    color: black;
+    margin-left: 25px;
+    font-size: 1.7em;
+
+}
+
+/* section2 services */
+.serv {
+    display: flex;
+    justify-content: center;
+    color: #3a6cf4;
+    margin-top: 40px;
+    font-size: 2.5em;
+    font-weight: 700;
+}
+
+
+.content {
+    display: flex;
+    flex-direction: row;
+    /* cards if will increse will be beside of them */
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 30px;
+    padding-top: 20px;
+    height: 260px;
+    width: 30%;
+    border: 2px solid transparent;
+    background-color: #eee;
+    border-radius: 15px;
+    margin-left: 30px;
+    margin-right: 15px;
+    margin-top: 50px;
+    transition: 0.7s;
+}
+
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.card i {
+    font-size: 5em;
+    color: #3a6cf4;
+}
+
+#titleJob {
+    color: #3a6cf4;
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-top: 25px;
+    margin-bottom: 7px;
+}
+
+#jobDescription {
+    font-size: 1.1em;
+    font-weight: 400;
+
+}
+
+/* projects */
+.projectCard {
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    width: 30%;
+    background-color: #eee;
+    border-radius: 15px;
+    margin-left: 30px;
+    margin-right: 15px;
+    margin-top: 50px;
+    transition: 0.7s;
+}
+
+.projectCard:hover {
+    transform: scale(1.1);
+}
+
+.projectCard img {
+    width: 100%;
+    height: 70%;
+    border-radius: 15px;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+.projectCard img:hover {
+    opacity: 0.9;
+}
+
+.projectMore {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.projectName {
+    font-size: 2em;
+    font-weight: 600;
+    padding-left: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #3a6cf4;
+    text-transform: uppercase;
+}
+
+.projectCategory {
+    font-size: 1.5em;
+    font-weight: 500;
+    padding-left: 10px;
+}
+
+.projectView {
+    text-decoration: none;
+    font-size: 1.3em;
+    font-weight: 600;
+    color: #3a6cf4;
+    padding-right: 20px;
+}
+
+.projectView:hover {
+    color: blue;
+}
+
+#contentss,#projects,#services{
+    border: 2px solid transparent;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+/* footer */
+.footerBar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: sticky;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.219);
+    border-radius: 5px;
+}
+
+.footerBar p{
+    font-size: 1.2em;
+    font-weight: 500;
+}
+.footerBar a i{
+    color: black;
+    font-size: 0.8em;
+}
+
+@media (max-width: 1023px) {
+    header {
+      padding: 10px 20px; /* Reduce padding */
+    }
+    .main {
+      padding: 60px 20px; /* Reduce padding */
+    }
+    .content {
+      flex-direction: column; /* Stack cards */
+    }
+    .card ,.projectCard{
+      width: 80%; /* Make cards wider */
+      margin: 20px auto; /* Center cards */
+    }
+    .footerBar p{
+        font-size: 1em;
+        font-weight: 300;
+    }
+    .footerBar a i{
+        color: black;
+        font-size: 0.5em;
+
+    }
+    .footerBar{
+        padding-right: 5px;
+        padding-left: 5px;
+    }   
+  }
